@@ -25,7 +25,7 @@ public class UserRepository : IUserRepository
 
     #endregion
 
-    #region ===[ IUserRepository Methods ]==================================================
+    #region ===[ IUserRepository Methods ]=====================================================
 
     public async Task<IReadOnlyList<User>> GetAllAsync(Guid? id)
     {
@@ -74,6 +74,16 @@ public class UserRepository : IUserRepository
             connection.Open();
             var result = await connection.ExecuteAsync(UserQueries.DeleteUser, new { Id = id });
             return result.ToString();
+        }
+    }
+
+    public async Task<bool> IsExistUserByEmail(string email)
+    {
+        using (IDbConnection connection = new SqlConnection(_configuration.GetConnectionString("CucinaConnection")))
+        {
+            connection.Open();
+            var result = connection.ExecuteScalar<bool>(UserQueries.IsExistUserByEmail, new { Email = email });
+            return result;
         }
     }
 

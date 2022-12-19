@@ -17,4 +17,6 @@ public static class UserQueries
                                        @IsSMSConfirmed, @RegistrationDate,@ModificationDate, @IsDeleted";
 
     public static string DeleteUser => @"EXEC [dbo].[DeleteUser] @Id";
+
+    public static string IsExistUserByEmail => @"Select dbo.IsExistUserByEmail(@Email)";
 }
