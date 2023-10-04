@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Cucina.Domain\Cucina.Domain.csproj" />
+      <ProjectReference Include="..\Cucina.Persistence\Cucina.Persistence.csproj" />
+    </ItemGroup>
+
 </Project>
