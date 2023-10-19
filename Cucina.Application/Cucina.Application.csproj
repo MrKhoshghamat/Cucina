@@ -9,9 +9,6 @@
     <ItemGroup>
       <Folder Include="Features\User\Commands\Create\Event\" />
       <Folder Include="Features\User\Commands\Delete\Event\" />
-      <Folder Include="Features\User\Commands\Delete\Handler\" />
-      <Folder Include="Features\User\Commands\Delete\Model\" />
-      <Folder Include="Features\User\Commands\Delete\Validation\" />
       <Folder Include="Features\User\Commands\Update\Event\" />
       <Folder Include="Features\User\Queries\GetAll\Event\" />
       <Folder Include="Features\User\Queries\GetAll\Handler\" />
