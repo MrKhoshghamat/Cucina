@@ -13,9 +13,6 @@
       <Folder Include="Features\User\Commands\Delete\Model\" />
       <Folder Include="Features\User\Commands\Delete\Validation\" />
       <Folder Include="Features\User\Commands\Update\Event\" />
-      <Folder Include="Features\User\Commands\Update\Handler\" />
-      <Folder Include="Features\User\Commands\Update\Model\" />
-      <Folder Include="Features\User\Commands\Update\Validation\" />
       <Folder Include="Features\User\Queries\GetAll\Event\" />
       <Folder Include="Features\User\Queries\GetAll\Handler\" />
       <Folder Include="Features\User\Queries\GetAll\Model\" />
