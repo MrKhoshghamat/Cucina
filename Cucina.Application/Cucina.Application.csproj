@@ -6,4 +6,34 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Features\User\Commands\Create\Event\" />
+      <Folder Include="Features\User\Commands\Delete\Event\" />
+      <Folder Include="Features\User\Commands\Delete\Handler\" />
+      <Folder Include="Features\User\Commands\Delete\Model\" />
+      <Folder Include="Features\User\Commands\Delete\Validation\" />
+      <Folder Include="Features\User\Commands\Update\Event\" />
+      <Folder Include="Features\User\Commands\Update\Handler\" />
+      <Folder Include="Features\User\Commands\Update\Model\" />
+      <Folder Include="Features\User\Commands\Update\Validation\" />
+      <Folder Include="Features\User\Queries\GetAll\Event\" />
+      <Folder Include="Features\User\Queries\GetAll\Handler\" />
+      <Folder Include="Features\User\Queries\GetAll\Model\" />
+      <Folder Include="Features\User\Queries\GetAll\Validation\" />
+      <Folder Include="Features\User\Queries\GetById\Event\" />
+      <Folder Include="Features\User\Queries\GetById\Handler\" />
+      <Folder Include="Features\User\Queries\GetById\Model\" />
+      <Folder Include="Features\User\Queries\GetById\Validation\" />
+      <Folder Include="Features\User\Queries\GetByPredicate\Event\" />
+      <Folder Include="Features\User\Queries\GetByPredicate\Handler\" />
+      <Folder Include="Features\User\Queries\GetByPredicate\Model\" />
+      <Folder Include="Features\User\Queries\GetByPredicate\Validation\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="11.7.1" />
+      <PackageReference Include="libphonenumber-csharp" Version="8.13.23" />
+      <PackageReference Include="MediatR" Version="12.1.1" />
+    </ItemGroup>
+
 </Project>
